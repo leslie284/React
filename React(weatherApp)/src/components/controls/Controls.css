@@ -1,0 +1,64 @@
+.controls {
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--blue);
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .controls {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.controls > div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .controls > div {
+    margin-bottom: 1rem;
+  }
+}
+.control-title {
+  display: inline-block;
+  margin-right: .5em;
+}
+.controls .btn {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 16px;
+  padding: .5em 1em;
+  border-radius: 20px;
+  color: var(--blue);
+  box-shadow: 0px 0px 5px rgba(35, 64, 92, .3);
+  background-color: transparent;
+  font-family: 'Raleway', sans-serif;
+  border: none;
+}
+.controls .btn:hover {
+  background-color: rgba(35, 64, 92, 0.5);
+}
+.controls .active, .controls .btn:active {
+  outline: none;
+  background-color: rgba(35, 64, 92, .5);
+  color: white;
+}
+.controls .btn-left {
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.controls .btn-right {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.temperature-buttons {
+  justify-content: center;
+}
+.view-buttons {
+  justify-content: flex-end;
+}

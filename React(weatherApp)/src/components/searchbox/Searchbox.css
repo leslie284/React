@@ -1,0 +1,47 @@
+.searchbox {
+  padding: 2rem 0;
+}
+.search-form {
+  margin-bottom: 1rem;
+}
+.search-form input, .search-form button {
+  padding: .5em 1em;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px rgba(35, 64, 92, .2);
+}
+.search-form > input:focus, .search-form > button:focus {
+  outline: none;
+}
+.search-form button {
+  background-color: var(--lightBlue);
+  color: white;
+  cursor: pointer;
+}
+.search-error {
+  font-weight: 300;
+  color: var(--darkGrey);
+  font-size: 18px;
+}
+.help {
+  color: var(--darkBlue);
+  font-weight: 300;
+  font-size: 14px;
+}
+.help img {
+  display: inline-block;
+  height: 16px;
+  position: relative;
+  top: 3px;
+  margin-right: .5em;
+}
+.search-form > .btn-left {
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.search-form > .btn-right {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
